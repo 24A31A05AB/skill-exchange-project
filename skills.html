@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Skills</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1>SkillX</h1>
+    <nav>
+    <a href="login.html">Login</a>
+      <a href="index.html">Home</a>
+      <a href="skills.html">Explore</a>
+      <a href="add-skill.html">Add Skill</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2>Explore Skills</h2>
+
+    <!-- Search Box -->
+    <input 
+      class="search" 
+      type="text" 
+      id="search" 
+      placeholder="Search skills..." 
+      onkeyup="searchSkill()"
+    >
+
+    <!-- Skills Cards -->
+    <div id="skillsList" class="grid"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
